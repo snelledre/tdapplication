@@ -59,7 +59,7 @@ python manage.py collectstatic
 'accounts.apps.AccountsConfig',
 'users.apps.UsersConfig',
 
-[os.path.join(BASE_DIR, 'templates')]
+[BASE_DIR / 'templates']
 
 #urls
 path('', include('posts.urls')),
